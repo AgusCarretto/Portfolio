@@ -1,0 +1,19 @@
+header{
+
+    padding: 2%;
+    margin: 10px;
+    
+}
+
+header ul{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    margin: 10px;
+}
+
+header ul li{
+    margin: 0 10px;
+    
+}
