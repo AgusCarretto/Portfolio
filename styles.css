@@ -1,105 +1,420 @@
 @import url('https://fonts.googleapis.com/css2?family=Red+Rose:wght@300..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Red+Rose:wght@300..700&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
 
-*{
+
+* {
     box-sizing: border-box;
-    font-family: 'Red Rose', cursive;
+    font-family: 'Roboto';
     margin: 0;
     padding: 0;
-    
-    
+
+
 }
-body{
+
+body {
     padding: 0px;
     margin: 0px;
-    
-   
+
+
 
 }
-html{
-    scroll-behavior:smooth;
-}
 
-#navTitle:hover{
-    transition: 0.5s;
-    color: #3282B8;
-    
-}
-
-.nav-li {
-    color: #BBE1FA !important;
-}
-.nav-li:hover{
-    transition: 0.5s;
-    color: #3282B8 !important;
+html {
+    scroll-behavior: smooth;
 }
 
 
-
-.container-separadores{
-    display: flex;
-    justify-content: space-between;
-    
-  }
+/* -------------------CABEZAL--------------------- */
 
 
-section{
+header nav {
+    height: 10vh;
+    font-size: 20px;
+    z-index: 99;
+    top: 0;
     margin: 0;
     padding: 0;
-    position: relative; 
+}
+
+
+
+.bg-dark {
+    background-color: transparent !important;
+    background: linear-gradient(black, rgb(0, 0, 0, 0.98));
+
+}
+
+
+.nav-li {
+    color: rgb(255, 255, 255) !important;
+
+    margin: 10px 20px;
+    font-weight: 1000;
+}
+
+
+.nav-li:hover {
+    transition: 0.5s;
+    color: rgb(70, 70, 70) !important;
+
+
+}
+
+
+
+/* -------------------SECTION GENERALES--------------------- */
+
+section {
+    margin: 0;
+    position: relative;
     width: 100%;
     height: 100vh;
 }
 
-#home, #skills, #contact{
-    color: #000000e0;
-    background-color: #ffffffe7
-    
+.sectionTotal {
+
+    background: linear-gradient(rgb(0, 0, 0), rgba(0, 0, 0, 0.870)), url(IMG/ilya-pavlov-OqtafYT5kTw-unsplash.jpg);
+    background-size: cover;
+    justify-items: center;
+    text-align: center;
+    background-attachment: fixed;
+    align-items: center;
 }
-#about, #projects{
-    color: aliceblue;
-    background-color: #212529;
+
+
+.containerSection {
+
+    position: relative;
+    color: #fff;
+    background-color: transparent !important;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    width: 100%;
+    margin: auto;
+    align-items: center;
+    padding: 3px 10px;
+
 
 }
 
-.containerUp{
+.container-flecha {
     position: absolute;
-    bottom: 10px;
+    bottom: 20px;
     left: 50%;
-    width: 50px;
-    height: 50px;
+    transform: translateX(-50%);
     border-radius: 50px;
     display: flex;
     align-items: center;
     justify-content: center;
-   
-}
-.light{
-    background-color: #ffffff;
+    cursor: pointer;
+    z-index: 10;
 }
 
-.dark{
-    background-color: #212529;
-
-}
-.dark a i{
-    color: #ffffff;
+.container-flecha a {
+    font-size: 40px;
+    color: #ffffffd3;
 }
 
+.container-flecha a:hover {
+    font-size: 50px;
+    color: #ffffff6e;
+    transition: 0.3s;
+}
+
+
+/* -------------------SECTION 1--------------------- */
+
+#home {
+    margin-top: -10vh;
+}
+
+#firstSectSaludo {
+    font-size: 65px;
+    font-weight: bold;
+}
+
+
+.container-separadores {
+
+    display: flex;
+    justify-content: space-between;
+
+}
+
+
+.section1 {
+    display: flex;
+}
 
 
 
-.containerUp a {
-    text-decoration: none;
-    color: rgb(255, 255, 255);
+
+.redes {
+    position: static;
+    padding-top: 10px;
+
+}
+
+.redes a {
+
+    margin: 5px;
     font-size: 30px;
+    padding: 20px;
 
 }
 
-.arrowUp{
- 
-    color: #212529;
+.redes a:hover {
+
+    transition: 0.3s;
+    font-size: 40px;
+    color: #1500d4;
 
 }
+
+
+/* -------------------SECTION 2--------------------- */
+
+
+
+.sobreMiSection {
+    margin-top: 10%;
+    font-size: 18px;
+    flex-direction: row;
+
+}
+
+.textoSobreMi {
+    width: 50%;
+    padding-left: 100px;
+}
+
+
+
+.titleSections {
+    padding-top: 5%;
+    color: #fff;
+    font-size: 30px;
+    font-weight: bold;
+    text-align: center;
+
+}
+
+
+
+#imgPerfil {
+
+    margin-left: 100px;
+    width: 350px;
+    height: 350px;
+    border-radius: 100%;
+}
+
+
+
+
+
+/* -------------------SECTION 3--------------------- */
+
+.skillsSection {
+    flex-direction: column;
+}
+
+.skillsContainer {
+    margin-top: 5%;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+
+}
+
+.skillCard {
+    background: #1a1a1a;
+    border-radius: 15px;
+    padding: 15px;
+    margin: 2rem;
+    text-align: center;
+    transition: transform 0.3s ease;
+}
+
+.skillCard i {
+    font-size: 3rem;
+    color: #1903db;
+}
+
+.skillCard h3 {
+    margin-top: 10px;
+    color: #fff;
+    font-size: 1.2rem;
+}
+
+.skillCard:hover {
+    transform: scale(1.05);
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.5);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media only screen and (max-width: 600px) {
+
+    #containerSection {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #imgPerfil {
+        width: 200px;
+        height: 270px;
+    }
+
+
+    /*-----------------------Sobre Mi-----------------------*/
+    .sobreMiSection {
+        margin-top: 10%;
+        font-size: 18px;
+        flex-direction: column
+    }
+
+    .textoSobreMi {
+        width: 100%;
+        padding-left: 0;
+    }
+
+    /*---------------Skills-----------------------*/
+
+    .skillsContainer {
+        margin-top: 0px;
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+
+
+    }
+
+    .skillCard {
+        background: #1a1a1a;
+        border-radius: 10px;
+        padding: 10px;
+        margin: 0.2rem;
+        text-align: center;
+        transition: transform 0.3s ease;
+    }
+
+
+}
+
+@media only screen and (max-width: 1000px) {
+    #imgPerfil {
+        display: none;
+    }
+
+    /*---------------Skills-----------------------*/
+
+    .skillsContainer {
+        margin-top: 0px;
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+
+
+    }
+
+    .skillCard {
+        background: #1a1a1a;
+        border-radius: 10px;
+        padding: 10px;
+        margin: 0.2rem;
+        text-align: center;
+        transition: transform 0.3s ease;
+    }
+}
+
+
+
+@media only screen and (max-width: 1200px) {
+
+    #containerSection {
+        width: 100%;
+
+    }
+
+    .sobreMiSection {
+        margin-top: 10%;
+        font-size: 18px;
+        flex-direction: column
+    }
+
+    .textoSobreMi {
+        width: 100%;
+        padding-left: 0;
+    }
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 /* 
 .contenido{
@@ -118,7 +433,7 @@ section{
     
 
 } */
-  
+
 
 
 
@@ -155,4 +470,83 @@ header ul li{
     margin-right: 20px;
     transition: color 0.3s ease-in-out;
     
+} */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*Ideas chat
+/* 
+.projects-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+    padding: 20px;
+}
+
+.project-card {
+    background-color: #fff;
+    color: #000;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.project-card img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+.project-card h3 {
+    margin: 10px 0;
+}
+
+.project-card .btn {
+    margin-top: 10px;
+    padding: 10px 20px;
+    background-color: #1500d4;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+.project-card .btn:hover {
+    background-color: #0f00a1;
 } */
