@@ -1,12 +1,18 @@
-// let nav = document.querySelector("#nav");
-// nav.style.display = 'none';
+let burgaActive = false;
+let allSections = document.querySelector(".containerSection");
 
-// document.querySelector("#menuBurguer").addEventListener("click", mostrarOcultarMenu);
 
-// function mostrarOcultarMenu () {
-//     if(nav.style.display == 'none')
-//         nav.style.display = 'block';
-//     else
-//         nav.style.display = 'none';
+document.querySelector("#menuBurga").addEventListener("click", blurearMenu);
+
+function blurearMenu () {
+    burgaActive = !burgaActive;
+    if(burgaActive)
+        
+        allSections.classList.add("blur");
     
-// }
+    else
+        allSections.classList.remove("blur");
+    
+  
+}
+
