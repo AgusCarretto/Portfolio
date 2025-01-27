@@ -352,14 +352,7 @@ section {
 
     /*---------------Skills-----------------------*/
 
-    .skillsContainer {
-        margin-top: 0px;
-        display: flex;
-        justify-content: center;
-        flex-wrap: wrap;
-
-
-    }
+    
 
     .skillCard {
         background: #1a1a1a;
