@@ -266,27 +266,24 @@ section {
 
 
 
+/* -------------------SECTION 4--------------------- */
+
+#titleProy{
+    padding: 5%;
+}
 
 
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+.carousel-inner img {
+    width: 60vh; /* Mantiene el ancho fijo */
+    height: 40vh; /* Ajusta la altura según necesites */
+    object-fit: cover; /* Evita que la imagen se distorsione */
+    transform: scale(1);
+    transition: opacity 0.5s ease-in-out;
+    
+}
 
 
 
@@ -370,7 +367,7 @@ section {
         gap: 5px; 
     }
 
-  
+
     .skillCard {
         width: 150px;
         height: 120px;
