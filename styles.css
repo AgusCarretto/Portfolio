@@ -277,12 +277,12 @@ section {
 
 
 .carousel-inner img {
-    width: 60vh; /* Mantiene el ancho fijo */
-    height: 40vh; /* Ajusta la altura según necesites */
+   
+    height: 50vh; /* Ajusta la altura según necesites */
     object-fit: cover; /* Evita que la imagen se distorsione */
     transform: scale(1);
     transition: opacity 0.5s ease-in-out;
-
+    object-fit: contain;
 }
 
 
@@ -476,11 +476,12 @@ section {
 
 
 .title{
+    margin-top: 30px;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     font-size: 30px;
     padding-bottom: 10px;
     text-decoration: none;
-    color: #3a28dfe5;
+    color: #ffffff;
     text-decoration: underline;
 
 }
@@ -502,8 +503,9 @@ section {
     text-decoration: none;
 
 }
+
 .container-flecha-back{
-    position: fixed;
+    position: absolute;
     left: 3%;
     top: 3%;
     display: flex;
@@ -524,6 +526,36 @@ section {
     color: #3a28dfe5;
     transition: 0.2s;
 }
+
+
+
+#galeria{
+    padding-top: 5vh;
+    
+    color: #ffffff;
+    text-decoration: underline;
+}
+
+
+.inner2 img {
+   
+    height: 50vh; /* Ajusta la altura según necesites */
+    object-fit: cover; /* Evita que la imagen se distorsione */
+    transform: scale(1);
+    transition: opacity 0.5s ease-in-out;
+    object-fit: contain;
+
+}
+
+
+
+
+
+
+
+
+
+
 
 
 
